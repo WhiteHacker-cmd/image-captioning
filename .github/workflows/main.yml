@@ -16,7 +16,7 @@ jobs:
       - name: Configure SSH Key
         run: |
           echo "$PRIVATE_KEY" > ic.pem
-          chmod 600 example.pem
+          chmod 600 ic.pem
 
       - name: Deploy to EC2 Instance
         uses: appleboy/ssh-action@master
